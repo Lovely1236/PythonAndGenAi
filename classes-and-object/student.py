@@ -1,0 +1,13 @@
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.attendance = "Not Marked"
+
+    def mark_present(self):
+        self.attendance = "Present"
+
+    def mark_absent(self):
+        self.attendance = "Absent"
+s = Student("Alex")
+s.mark_present()
+print(s.attendance)
